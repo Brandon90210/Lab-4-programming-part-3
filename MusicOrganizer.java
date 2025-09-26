@@ -142,6 +142,19 @@ public class MusicOrganizer
     }
     
     /**
+     * List the names of files matching the given search string.
+     * @param searchString The string to match.
+     */
+    public void playSample();
+    {
+        boolean search = true;
+        for(String filename : files) {
+            
+        }
+        
+    }
+    
+    /**
      * Determine whether the given index is valid for the collection.
      * Print an error message if it is not.
      * @param index The index to be checked.
