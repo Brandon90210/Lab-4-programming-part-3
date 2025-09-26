@@ -67,11 +67,10 @@ public class MusicOrganizer
      */
     public void listWithIndex ()
     {
+        int position = 0;
         for(String filename : files) {
-            var position;
-            position = files;
-            files = 0;
             System.out.println(position + ": " + filename);
+            position++;
         }
     }
     
@@ -119,6 +118,20 @@ public class MusicOrganizer
         }
     }
 
+    /**
+     * List the names of files matching the given search string.
+     * @param searchString The string to match.
+     */
+    public void listMatching(String searchString)
+    {
+        for(String filename : files) {
+            if(filename.contains(searchString)) {
+                // A match.
+                System.out.println(filename);
+            }
+        }
+    }
+    
     /**
      * Determine whether the given index is valid for the collection.
      * Print an error message if it is not.
