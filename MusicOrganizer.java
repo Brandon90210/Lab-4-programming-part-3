@@ -145,13 +145,12 @@ public class MusicOrganizer
      * List the names of files matching the given search string.
      * @param searchString The string to match.
      */
-    public void playSample();
-    {
-        boolean search = true;
+    public void playSample(String searchString){        
         for(String filename : files) {
-            
-        }
-        
+            if(filename.contains(searchString)) {
+                player.playSample(filename);
+            }
+        }        
     }
     
     /**
