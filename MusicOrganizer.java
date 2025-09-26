@@ -20,6 +20,7 @@ public class MusicOrganizer
     {
         files = new ArrayList<>();
         player = new MusicPlayer();
+        //for(Track t : trackList){}
     }
     
     /**
